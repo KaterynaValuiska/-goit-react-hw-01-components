@@ -1,7 +1,7 @@
 import user from './json/user.json'
 import data from './json/data.json'
 import Profile from './Profile'
-import Statistics from './Statistics'
+import StatisticsList from './StatisticsList'
 
 
 export const App = () => {
@@ -24,15 +24,7 @@ export const App = () => {
   stats={user.stats}
       />
       <h2 class="title">Upload stats</h2> 
-      <ul class="stat-list">
-      {data.map(el => (
-        <Statistics
-          key={el.id}
-          title="Upload stats"
-          percentage={el.percentage}
-          label={el.label } /> 
-      ))}
-      </ul>
+      <StatisticsList data={data } />
     </div>
   );
 };
