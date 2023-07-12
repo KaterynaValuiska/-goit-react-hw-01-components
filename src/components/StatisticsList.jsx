@@ -1,8 +1,11 @@
 import Statistics from './Statistics'
+import PropTypes from 'prop-types'
+import css from './Statistics.module.css'
 
 function StatisticsList({data }) {
-    return (
-         <ul class="stat-list">
+  return (
+      
+         <ul className={css.stats}>
       {data.map(el => (
         <Statistics
           key={el.id}
@@ -12,6 +15,10 @@ function StatisticsList({data }) {
       ))}
       </ul>
     )
+}
+
+StatisticsList.propTypes = {
+  data: PropTypes.array,
 }
 
 export default StatisticsList;
