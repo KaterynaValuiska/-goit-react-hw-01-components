@@ -16,6 +16,9 @@ table tr:nth-child(even) {
     background-color: rgba(215, 228, 244, 0.84);
 }
 
+table th {
+    background-color: rgba(215, 228, 244, 0.84);
+}
 table th,
 table td {
     padding: 10px;
