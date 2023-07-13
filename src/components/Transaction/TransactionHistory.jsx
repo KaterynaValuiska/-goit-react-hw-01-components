@@ -3,6 +3,9 @@ import css from './Transaction.module.css'
 
 function TransactionHistory({transactions}) {
     return (
+        <>
+            <h2 className={css.title}>
+        Transactions</h2>
         <table className={css.transactionHistory}>
   <thead>
     <tr>
@@ -20,7 +23,8 @@ function TransactionHistory({transactions}) {
     </tr>
             ))}
   </tbody>
-</table>
+        </table>
+      </>  
     )
 }
 
