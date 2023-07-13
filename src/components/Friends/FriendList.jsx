@@ -12,7 +12,7 @@ function FriendList({ friends }) {
                 <FriendListItem
                     key={friend.id}
                     avatar={friend.avatar}
-                    nameFriend={friend.nameFriend}
+                    name={friend.name}
                     isOnline={ friend.isOnline} />
   ))}
 </ul>
@@ -25,7 +25,7 @@ FriendList.propTypes = {
         PropTypes.shape({
             id: PropTypes.number.isRequired,
             avatar: PropTypes.string.isRequired,
-            nameFriend: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
             isOnline: PropTypes.bool.isRequired,
         }).isRequired
     ).isRequired
